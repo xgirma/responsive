@@ -1,37 +1,79 @@
-.top-nav {
+html, body {
+    font-family: 'San Francisco', 'SNFS Display', BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0 auto;
+}
+
+
+header {
     display: grid;
     align-content: center;
-    background-color: black;
-    color: white;
+    background-color: #a4763a;
+    grid-row-gap: 0em;
+    position: fixed;
+    width: 100%;
+    filter: sepia(0%);
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+    filter: sepia(50%);
 }
 
 .top-nav-ul {
     padding: 0;
     list-style: none;
     display: grid;
+    align: center;
+
 }
 
-li {
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 5px;
+.main {
+    display: grid;
+    grid-gap: 2em;
 }
 
+.header {
+    grid-row: 1/2;
+}
+
+.banner {
+    grid-row: 2/3;
+}
+
+.footer {
+    grid-row: 3/4;
+}
 
 @media (min-width: 650px) {
+    .main {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-rows: 100px auto 400px;
+    }
 
-}
+    .header {
+        grid-row: 1/2;
+    }
 
-@media (min-width: 1000px) {
+    .banner {
+        grid-row: 2/3;
+    }
+
+    .footer {
+        grid-row: 3/4;
+    }
     .top-nav-ul {
         display: grid;
         grid-gap: 2em;
-        grid-template-columns: 3fr auto 1fr 1fr 1fr 1fr 1fr auto 3fr 1fr;
+        grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 15fr;;
         grid-template-rows: auto;
+        filter: sepia(10%);
     }
 
     .cross {
-        grid-column: 1/2;
+        grid-column: 2/3;
     }
 
     .home {
@@ -53,14 +95,26 @@ li {
     .gallery {
         grid-column: 7/8;
     }
+}
 
-    .language {
-        grid-column: 9/10;
-        display: flex;
-        justify-content: flex-end;
+@media (min-width: 1000px) {
+    .top-nav-ul {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 15fr;
+        /*  -   +   H   S   B   M   G   -  AM   EN  @   - */
+        grid-template-rows: auto;
+        filter: sepia(10%);
     }
+}
 
-    .user-icon {
-        grid-column: 10/11;
-    }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /*background-image: url("img.png");*/
+    background-color: #a4763a;
+    height: 70px;
 }
