@@ -66,7 +66,17 @@ Our Church history:
 Links
 Members login
 Become a member
-Request Christening document
+Christening document
 Monthly donation giving 
 Contact us
 Subscribe
+
+
+Services 
+ሥርዓተ ቅዳሴ
+ክርስትና 
+ቁርባን 
+ንስሐ 
+ሥርዓተ ጋብቻ 
+ቀንዲል 
+ጸሎተ ፍትሐት 
